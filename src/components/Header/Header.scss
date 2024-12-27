@@ -1,0 +1,98 @@
+.header-section {
+  background: #f8f9fa;
+
+  .header-top {
+    background: #343a40;
+    color: #fff;
+    padding: 10px 0;
+
+    .links {
+      display: inline-block;
+      margin-right: 15px;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 5px;
+      }
+    }
+
+    .top-social {
+      a {
+        margin-left: 10px;
+        color: #fff;
+
+        &:hover {
+          color: #f27021; /* Naranja suave */
+        }
+      }
+    }
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center; /* Asegura que los elementos estén centrados */
+    align-items: center;
+  }
+
+  .col-lg-2 {
+    text-align: center;
+  }
+
+  .col-lg-6 {
+    display: flex;
+    justify-content: center; /* Centra el buscador */
+    align-items: center;
+    padding: 0;
+  }
+
+  .buscadorSecciones {
+    width: 70%; /* Asegura que el buscador ocupe más espacio */
+    input {
+      width: 100%;
+      padding: 15px; /* Aumenta el tamaño */
+      font-size: 18px; /* Aumenta el tamaño del texto */
+      border: 2px solid #f27021; /* Color naranja suave en el borde */
+      border-radius: 5px;
+    }
+  }
+
+  .nav-right {
+    display: flex;
+    //justify-content: space-evenly;
+    width: 100%; /* Asegura que los botones se distribuyan correctamente */
+    margin-right: 8px;  /* Ajusta el espaciado entre los botones */
+    justify-content: flex-end;
+    align-items: center;
+    a {
+      color: #333;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      background-color: #f8f9fa;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        background-color: #f27021; /* Naranja suave */
+        color: #fff;
+      }
+
+      i {
+        margin-right: 8px;
+      }
+
+      span {
+        background: #f27021;
+        color: #fff;
+        padding: 2px 5px;
+        border-radius: 50%;
+        font-size: 14px;
+      }
+    }
+  }
+}
