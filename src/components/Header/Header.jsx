@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+import PropTypes from "prop-types";
 import "./Header.scss";
 
-const Header = () => {
+const Header =  ({ onSearch })=> {
+
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleSearchChange = (event) => {
+    const value = event.target.value;
+    setSearchTerm(value);
+    onSearch(value); // Llamar al callback para notificar el término de búsqueda
+  };
+  
   return (
     <header className="header-section">
       <div className="header-top">
@@ -68,16 +78,22 @@ const Header = () => {
         </div>
         <div className="col-lg-6 d-flex justify-content-center">
             <div className="buscadorSecciones">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Comienza tu búsqueda"
-              />
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Comienza tu búsqueda"
+              value={searchTerm}
+              onChange={handleSearchChange}
+            />
             </div>
           </div>
       </div>
     </header>
   );
+};
+
+Header.propTypes = {
+  onSearch: PropTypes.func.isRequired, // Callback para manejar la búsqueda
 };
 
 export default Header;

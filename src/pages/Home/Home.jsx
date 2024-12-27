@@ -1,16 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../../components/Header/Header";
 import BookList from "../../components/BookCard/BookList";
-import books from "../../mock-data/books.json"; // Asegúrate de que este archivo exista.
+import booksData  from "../../mock-data/books.json"; // Asegúrate de que este archivo exista.
 import "./Home.scss";
 
 const Home = () => {
+
+  const [searchTerm, setSearchTerm] = useState("");
+
+  // Manejar cambios en la barra de búsqueda
+  const handleSearch = (term) => {
+    setSearchTerm(term.toLowerCase());
+  };
+
+  // Filtrar libros según el término de búsqueda
+  const filteredBooks = booksData.filter((book) =>
+    book.title.toLowerCase().includes(searchTerm)
+  );
+
   return (
     <div>
-      <Header />
+       {/* Pasar el callback al componente Header */}
+      <Header onSearch={handleSearch}/>
       <main className="home">
         <h2 className="text-center">Lista de Libros</h2>
-        <BookList books={books} />
+        <BookList  books={filteredBooks} />
       </main>
     </div>
   );
