@@ -2,20 +2,20 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import "./Header.scss";
 
-const Header =  ({ onSearch })=> {
-
+const Header = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleSearchChange = (event) => {
     const value = event.target.value;
     setSearchTerm(value);
-    onSearch(value); // Llamar al callback para notificar el término de búsqueda
+    onSearch(value);
   };
-  
+
   return (
     <header className="header-section">
+      {/* Parte superior con redes sociales */}
       <div className="header-top">
-        <div className="container">
+        <div className="container d-flex justify-content-between">
           <div className="ht-left">
             <div className="links">
               <i className="fa fa-map-marker" title="Locales"></i>
@@ -40,19 +40,22 @@ const Header =  ({ onSearch })=> {
               <a href="https://www.instagram.com/mrbooksec/" target="_blank" rel="noopener noreferrer">
                 <i className="fa fa-instagram" title="Instagram"></i>
               </a>
-              <a href="https://www.youtube.com/channel/UCjpeF-V5mndjE8bJtbhHQXA" target="_blank" rel="noopener noreferrer">
+              <a href="https://goo.gl/Cu2Zrg" target="_blank" rel="noopener noreferrer">
                 <i className="fa fa-youtube-play" title="YouTube"></i>
               </a>
-              <a href="https://open.spotify.com/user/8jf4gz5gz5eg7uocykwzjmrse" target="_blank" rel="noopener noreferrer">
+              <a href="https://open.spotify.com/user/8jf4gz5gz5eg7uocykwzjmrse?si=93zACu_bSwSXHdDhY1ywmg" target="_blank" rel="noopener noreferrer">
                 <i className="fa fa-spotify" title="Spotify"></i>
               </a>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Parte principal con logo, botones y buscador */}
       <div className="container mt-4">
-        <div className="row align-items-center">
-          <div className="col-lg-2 text-center">
+        <div className="row align-items-center justify-content-between">
+          {/* Logo */}
+          <div className="col-lg-3">
             <a href="https://www.mrbooks.com/home.html" className="brand-wrap">
               <img
                 src="https://www.mrbooks.com/assets/template1/img/logo.png?12"
@@ -61,6 +64,8 @@ const Header =  ({ onSearch })=> {
               />
             </a>
           </div>
+
+          {/* Botones */}
           <div className="col-lg-4 nav-right">
             <a href="https://www.mrbooks.com/iniciar_sesion.html" className="btn btn-light">
               <i className="fa fa-user"></i> INGRESAR
@@ -74,26 +79,29 @@ const Header =  ({ onSearch })=> {
               <span>0</span>
             </a>
           </div>
-
         </div>
-        <div className="col-lg-6 d-flex justify-content-center">
+
+        {/* Buscador */}
+        <div className="row mt-3">
+          <div className="col-12 d-flex justify-content-center">
             <div className="buscadorSecciones">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Comienza tu búsqueda"
-              value={searchTerm}
-              onChange={handleSearchChange}
-            />
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Comienza tu búsqueda"
+                value={searchTerm}
+                onChange={handleSearchChange}
+              />
             </div>
           </div>
+        </div>
       </div>
     </header>
   );
 };
 
 Header.propTypes = {
-  onSearch: PropTypes.func.isRequired, // Callback para manejar la búsqueda
+  onSearch: PropTypes.func.isRequired,
 };
 
 export default Header;

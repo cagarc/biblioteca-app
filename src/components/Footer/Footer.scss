@@ -1,0 +1,102 @@
+.footer-section {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+  
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /* Asegura que los elementos tengan espacio entre ellos */
+    }
+  
+    .footer-left, .footer-widget, .newslatter-item {
+      text-align: left;
+      flex: 1; /* Cada bloque ocupará el mismo espacio */
+      margin: 0 15px; /* Espacio entre los bloques */
+    }
+  
+    .footer-left {
+      .footer-logo img {
+        width: 150px;
+      }
+      .follow-us {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .footer-social {
+        margin-top: 10px;
+        a {
+          color: #fff;
+          margin-right: 10px;
+          transition: color 0.3s;
+          &:hover {
+            color: #f5a623;
+          }
+        }
+      }
+    }
+  
+    .footer-widget {
+      h5 {
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      ul li {
+        margin-bottom: 10px;
+      }
+      ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+        &:hover {
+          color: #f5a623;
+        }
+      }
+    }
+  
+    .newslatter-item {
+      h5 {
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+      form {
+        display: flex;
+        margin-top: 10px;
+      }
+      input {
+        flex: 1;
+        padding: 10px;
+        border-radius: 4px;
+      }
+      button {
+        background-color: #f5a623;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #d4781a;
+      }
+    }
+  
+    .copyright-reserved {
+      background-color: #222;
+      padding: 20px 0;
+      .payment-pic img {
+        height: 40px;
+      }
+    }
+  }
+  
+  

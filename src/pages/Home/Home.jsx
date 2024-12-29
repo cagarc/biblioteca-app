@@ -3,6 +3,7 @@ import Header from "../../components/Header/Header";
 import BookList from "../../components/BookCard/BookList";
 import booksData  from "../../mock-data/books.json"; // Asegúrate de que este archivo exista.
 import "./Home.scss";
+import Footer from '../../components/Footer/Footer';
 
 const Home = () => {
 
@@ -26,6 +27,7 @@ const Home = () => {
         <h2 className="text-center">Lista de Libros</h2>
         <BookList  books={filteredBooks} />
       </main>
+      <Footer />
     </div>
   );
 };

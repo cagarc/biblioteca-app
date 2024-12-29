@@ -17,57 +17,38 @@
       }
     }
 
-    .top-social {
-      a {
-        margin-left: 10px;
-        color: #fff;
+    .top-social a {
+      margin-left: 10px;
+      color: #fff;
 
-        &:hover {
-          color: #f27021; /* Naranja suave */
-        }
+      &:hover {
+        color: #f27021;
       }
     }
   }
 
-  .container {
-    padding: 0 15px;
-  }
-
-  .row {
-    display: flex;
-    justify-content: center; /* Asegura que los elementos estén centrados */
-    align-items: center;
-  }
-
-  .col-lg-2 {
-    text-align: center;
-  }
-
-  .col-lg-6 {
-    display: flex;
-    justify-content: center; /* Centra el buscador */
-    align-items: center;
-    padding: 0;
+  .brand-wrap img {
+    max-height: 60px;
   }
 
   .buscadorSecciones {
-    width: 70%; /* Asegura que el buscador ocupe más espacio */
+    width: 70%;
+
     input {
       width: 100%;
-      padding: 15px; /* Aumenta el tamaño */
-      font-size: 18px; /* Aumenta el tamaño del texto */
-      border: 2px solid #f27021; /* Color naranja suave en el borde */
+      padding: 15px;
+      font-size: 18px;
+      border: 2px solid #f27021;
       border-radius: 5px;
     }
   }
 
   .nav-right {
     display: flex;
-    //justify-content: space-evenly;
-    width: 100%; /* Asegura que los botones se distribuyan correctamente */
-    margin-right: 8px;  /* Ajusta el espaciado entre los botones */
     justify-content: flex-end;
     align-items: center;
+    gap: 10px;
+
     a {
       color: #333;
       text-decoration: none;
@@ -78,7 +59,7 @@
       align-items: center;
 
       &:hover {
-        background-color: #f27021; /* Naranja suave */
+        background-color: #f27021;
         color: #fff;
       }
 
