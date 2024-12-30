@@ -12,23 +12,23 @@ const Footer = () => {
               <div className="footer-logo">
                 <a href="#">
                   <img
-                    src="https://www.mrbooks.com/assets/template1/img/logoMrbMujerWhite.png?12"
+                    src="/assets/books/logo00.png"
                     alt="Logo MrBooks"
                   />
                 </a>
               </div>
               <p className="follow-us">SÍGUENOS EN:</p>
               <div className="footer-social">
-                <a href="https://www.facebook.com/MrBooksEcuador/" target="_blank" rel="noopener noreferrer">
+                <a  target="_blank" rel="noopener noreferrer">
                   <i className="fa fa-facebook fa-2x"></i>
                 </a>
-                <a href="https://www.instagram.com/mrbooksec/" target="_blank" rel="noopener noreferrer">
+                <a target="_blank" rel="noopener noreferrer">
                   <i className="fa fa-instagram fa-2x"></i>
                 </a>
-                <a href="https://goo.gl/Cu2Zrg" target="_blank" rel="noopener noreferrer">
+                <a  target="_blank" rel="noopener noreferrer">
                   <i className="fa fa-youtube-play fa-2x"></i>
                 </a>
-                <a href="https://open.spotify.com/user/8jf4gz5gz5eg7uocykwzjmrse?si=93zACu_bSwSXHdDhY1ywmg" target="_blank" rel="noopener noreferrer">
+                <a target="_blank" rel="noopener noreferrer">
                   <i className="fa fa-spotify fa-2x"></i>
                 </a>
               </div>
