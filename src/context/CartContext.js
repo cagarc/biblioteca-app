@@ -11,9 +11,14 @@ export const CartProvider = ({ children }) => {
   const addToCart = (book) => {
     setCart([...cart, book]);
   };
+console.log(cart);
 
+ // Función para limpiar el carrito
+ const clearCart = () => {
+  setCart([]);
+};
   return (
-    <CartContext.Provider value={{ cart, addToCart }}>
+    <CartContext.Provider value={{ cart, addToCart, clearCart }}>
       {children}
     </CartContext.Provider>
   );

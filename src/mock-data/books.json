@@ -6,7 +6,7 @@
       "isbn": "9789588821355",
       "category": "Empresarial",
       "publisher": "CONECTA",
-      "price": "15.00",
+      "price": 15.00,
       "image": "/assets/books/1.png",
       "description": "Hable Como En Ted Por Carmine Gallo. En el siglo XXI, la comunicación se ha convertido en la verdadera clave para el éxito. Por ello, las conferencias TED, seguidas por millones de personas de todo el mundo, han redefinido las reglas para cautivar a cualquier auditorio. El reputado especialista en coaching de presentaciones Carmine Gallo ha realizado un estudio exhaustivo de las conferencias TED más vistas y de las técnicas que coinciden en emplear los mejores ponentes. Con los resultados obtenidos, su propia experiencia como orador y las entrevistas realizadas a los más destacados neurocientíficos, psicólogos y expertos en comunicación, ha confeccionado este extraordinario método."
   },
@@ -17,7 +17,7 @@
       "isbn": "9789584297870",
       "category": "Lectura Juvenil",
       "publisher": "PLANETA",
-      "price": "18.50",
+      "price": 18.50,
       "image": "/assets/books/2.png",
       "description": "NOSOTROS EN LA LUNA. Tras el éxito de Deja que ocurra vuelve Alice Kellen con una novela que te enamorará. Una noche en París. Dos caminos entrelazándose. No hay nada más eterno que un encuentro fugaz. Cuando Rhys y Ginger se conocen en las calles de la ciudad de la luz, no imaginan que sus vidas se unirán para siempre, a pesar de la distancia y de que no puedan ser más diferentes. Ella vive en Londres y a veces se siente tan perdida que se ha olvidado hasta de sus propios sueños. Él es incapaz de quedarse quieto en ningún lugar y cree saber quién es."
   },
@@ -28,7 +28,7 @@
       "isbn": "9786287634530",
       "category": "Literatura Universal",
       "publisher": "PENGUIN RANDOM HOUSE",
-      "price": "21.70",
+      "price": 21.70,
       "image": "/assets/books/3.png",
       "description": "EL TABLERO DE LA REINA. Castilla se encuentra en un momento crucial de su historia. Alfonso de Trastámara ha muerto en sospechosas circunstancias y Enrique IV se alza como rey obligando a su hermanastra Isabel, la única que podría oponerse a sus planes, a firmar la paz. Ella acepta, pues está destinada a convertirse en Isabel la Católica y sabe que las grandes partidas no se ganan en el primer movimiento. Mientras los asuntos de la Corte mantienen al reino en vilo, el misterioso asesinato de un noble une fortuitamente a Gadea, una joven apasionada del ajedrez que esconde un oscuro pasado, y a Ruy, un cronista amante de la Historia y los libros."
   },
@@ -39,7 +39,7 @@
       "isbn": "9788494274730",
       "category": "Infantil",
       "publisher": "BIBLOK BOOK",
-      "price": "12.50",
+      "price": 12.50,
       "image": "/assets/books/4.png",
       "description": "EL LIBRO DE LOS PORQUES. Todo lo que nos rodea puede resultar sorprendente si lo miramos con curiosidad. ¿Por qué el cielo es azul? ¿Por qué tienen pelo las pelotas de tenis? ¿Por qué hay día y noche? ¿Por qué los teclados de escribir no están en orden alfabético? ¿Por qué lava el jabón? ¿Por qué pegan los pegamentos? ¿Por qué abriga la ropa? En este fascinante libro se reúnen cientos de respuestas a las preguntas más frecuentes que nos planteamos sobre nuestro planeta y sus habitantes, animales, vegetales y minerales, para no dejar que se pierda la curiosidad que nos caracteriza cuando somos niños."
   },
@@ -50,7 +50,7 @@
       "isbn": "9788494694350",
       "category": "Historia",
       "publisher": "BIBLOK BOOK",
-      "price": "18.00",
+      "price": 18.00,
       "image": "/assets/books/5.png",
       "description": "CULTURA EN 365 DIAS. Si un Robinson Crusoe del siglo XXI, perdido en otra dimensión, pudiera llevar un libro consigo para explicar a un nuevo viernes lo esencial de nuestra cultura, es altamente probable que escogiera uno muy parecido al que ahora tiene usted en sus manos. Porque en esta obra se reúne, en claras síntesis, una luminosa selección de las ideas que han hecho avanzar la civilización en el terreno de la literatura, la política, la religión, las bellas artes, la filosofía, la psicología, la arquitectura, la ciencia, la música, el cine o la economía."
   },
@@ -61,7 +61,7 @@
       "isbn": "9786287576180",
       "category": "Bienestar",
       "publisher": "ESPASA",
-      "price": "13.00",
+      "price": 13.00,
       "image": "https://www.mrbooks.com/../mrbooks/portadas/9786287659797.webp",
       "url": "https://www.mrbooks.com/9786287659797/invitacion-al-viaje-y-otros-cuentos-ineditos.html",
       "description": "COMO HACER QUE TE PASEN COSAS BUENAS. Uniendo el punto de vista científico, psicológico y humano, la autora nos ofrece una reflexión profunda, salpicada de útiles consejos y con vocación eminentemente didáctica, acerca de la aplicación de nuestras propias capacidades al empeño de procurarnos una existencia plena y feliz: conocer y optimizar determinadas zonas del cerebro, fijar metas y objetivos en la vida, ejercitar la voluntad, poner en marcha la inteligencia emocional, desarrollar la asertividad, evitar el exceso de autocrítica y autoexigencia, reivindicar el papel del optimismo."
@@ -73,7 +73,7 @@
       "isbn": "9788425432020",
       "category": "Psicologia",
       "publisher": "HERDER",
-      "price": "19.00",
+      "price": 19.00,
       "image": "/assets/books/10.png",
       "description": "EL HOMBRE EN BUSCA DE SENTIDO. Viktor Frankl, psiquiatra y superviviente de los campos de concentración nazis, comparte sus experiencias y reflexiona sobre cómo encontrar sentido a la vida incluso en los momentos más oscuros."
   }

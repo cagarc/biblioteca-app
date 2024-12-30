@@ -1,0 +1,103 @@
+.checkout {
+    padding: 40px;
+    background-color: #f9f9f9;
+  
+    &__title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+  
+    &__container {
+      display: flex;
+      gap: 40px;
+    }
+  
+    &__cart {
+      flex: 1;
+  
+      &-title {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+  
+      &-list {
+        list-style: none;
+        padding: 0;
+      }
+  
+      &-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+      }
+  
+      &-name {
+        font-weight: bold;
+      }
+  
+      &-price {
+        color: #f27021;
+      }
+    }
+  
+    &__total {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+  
+    &__form {
+      flex: 1;
+  
+      &-title,
+      &-subtitle {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+  
+      &-label {
+        display: block;
+        margin-bottom: 15px;
+  
+        & > input {
+          display: block;
+          width: 100%;
+          padding: 10px;
+          margin-top: 5px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+      }
+  
+      &-button {
+        background-color: #f27021;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+  
+        &:hover {
+          background-color: #d8601b;
+        }
+      }
+    }
+  
+    &--success {
+      text-align: center;
+  
+      &__message {
+        font-size: 2rem;
+        color: #28a745;
+      }
+  
+      &__redirect {
+        font-size: 1rem;
+        color: #555;
+      }
+    }
+  }
+  

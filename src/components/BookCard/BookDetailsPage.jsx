@@ -16,7 +16,7 @@ const BookDetailsPage = () => {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       navigate("/"); // Redirigir al listado de libros después de 5 minutos (300000ms)
-    }, 300000); // 5 minutos de inactividad
+    }, 2000); // 5 minutos de inactividad
 
     // Limpiar el temporizador si el componente se desmonta o si el usuario interactúa
     return () => clearTimeout(timeoutId);

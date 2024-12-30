@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import "./Header.scss";
-import { useCart } from "../../context/CartContext"; 
+import { useCart } from "../../context/CartContext";
+import { Link } from "react-router-dom";
 
 const Header = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -61,8 +62,8 @@ const Header = ({ onSearch }) => {
           <div className="col-lg-3">
             <a href="https://www.mrbooks.com/home.html" className="brand-wrap">
               <img
-                src="https://www.mrbooks.com/assets/template1/img/logo.png?12"
-                alt="MrBooks Logo"
+                src="assets/books/logo00.png"
+                alt="Relatos de papel"
                 className="d-block"
               />
             </a>
@@ -77,10 +78,10 @@ const Header = ({ onSearch }) => {
               <i className="fa fa-heart"></i>
               <span>0</span>
             </a>
-            <a href="https://www.mrbooks.com/mi_carrito.html" className="btn btn-light">
+            <Link to="/checkoutPage" className="btn btn-light">
               <i className="fa fa-shopping-cart"></i>
               <span>{cart.length}</span>
-            </a>
+            </Link>
           </div>
         </div>
 
