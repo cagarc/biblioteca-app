@@ -40,14 +40,14 @@ const Footer = () => {
             <div className="footer-widget">
               <h5>MAPA DEL SITIO</h5>
               <ul>
-                <li><a href="https://www.mrbooks.com/locales.html">Locales</a></li>
-                <li><a href="https://www.mrbooks.com/quienes_somos.html">Quiénes Somos</a></li>
-                <li><a href="https://www.mrbooks.com/contacto.html">Contáctenos</a></li>
-                <li><a href="https://www.mrbooks.com/contacto.html">Ventas Corporativas</a></li>
-                <li><a href="https://misterbooks.ecubill.com/portal/" target="_blank" rel="noopener noreferrer">Facturación Electrónica</a></li>
-                <li><a href="https://www.mrbooks.com/noticias.html">Noticias</a></li>
-                <li><a href="https://www.mrbooks.com/alcance_literario/ultima/publicacion.html">Alcance Literario</a></li>
-                <li><a href="https://www.mrbooks.com/Pol%C3%ACticadeProtecciondeDatosPersonales.pdf" target="_blank" rel="noopener noreferrer">Política de protección de datos personales</a></li>
+                <li><a>Locales</a></li>
+                <li><a>Quiénes Somos</a></li>
+                <li><a>Contáctenos</a></li>
+                <li><a>Ventas Corporativas</a></li>
+                <li><a target="_blank" rel="noopener noreferrer">Facturación Electrónica</a></li>
+                <li><a >Noticias</a></li>
+                <li><a >Alcance Literario</a></li>
+                <li><a target="_blank" rel="noopener noreferrer">Política de protección de datos personales</a></li>
               </ul>
             </div>
           </div>
@@ -57,12 +57,12 @@ const Footer = () => {
             <div className="footer-widget">
               <h5>POR QUÉ COMPRAR</h5>
               <ul>
-                <li><a href="https://www.mrbooks.com/guia_compras.html">Manual de compra online</a></li>
-                <li><a href="https://www.mrbooks.com/bonobooks.html">BonoBooks</a></li>
-                <li><a href="https://www.mrbooks.com/preguntas_frecuentes.html">Preguntas Frecuentes</a></li>
-                <li><a href="https://www.mrbooks.com/condiciones_de_compra.html">Condiciones de compra</a></li>
-                <li><a href="https://www.mrbooks.com/Terminos_y_condiciones_MrBooks.pdf" target="_blank" rel="noopener noreferrer">Términos y Condiciones</a></li>
-                <li><a href="https://www.mrbooks.com/entregas_domicilio.html">Entregas a Domicilio</a></li>
+                <li><a >Manual de compra online</a></li>
+                <li><a  >BonoBooks</a></li>
+                <li><a >Preguntas Frecuentes</a></li>
+                <li><a >Condiciones de compra</a></li>
+                <li><a target="_blank" rel="noopener noreferrer">Términos y Condiciones</a></li>
+                <li><a >Entregas a Domicilio</a></li>
               </ul>
             </div>
           </div>
@@ -72,7 +72,7 @@ const Footer = () => {
             <div className="newslatter-item">
               <h5>SUSCRÍBETE A NUESTRA NEWSLETTER</h5>
               <p>Recibe información selecta, promociones, descuentos, alcance literario y muchas sorpresas.</p>
-              <form action="https://www.mrbooks.com/contacto.html" method="get" className="subscribe-form">
+              <form  method="get" className="subscribe-form">
                 <input type="email" placeholder="Correo electrónico" name="correo" />
                 <button type="submit">SUSCRIBIRME</button>
               </form>
