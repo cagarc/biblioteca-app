@@ -1,0 +1,113 @@
+.book-details-page {
+    padding: 40px;
+    background-color: #f8f9fa;
+  
+    .book-details-container {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      max-width: 900px;  // Hacer el contenedor más angosto
+      margin: 0 auto;    // Centrar el contenedor
+      border: 1px solid #d3d3d3;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+      .book-image img {
+        max-width: 250px;  // Hacer la imagen más pequeña
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+  
+      .book-info {
+        flex: 1;
+        h1 {
+          font-size: 26px;
+          color: #333;
+          margin-bottom: 10px;
+        }
+  
+        .author {
+          font-size: 18px;
+          color: #f27021;
+          margin-bottom: 15px;
+        }
+  
+        p {
+          font-size: 16px;
+          margin: 5px 0;
+          b {
+            font-weight: bold;
+          }
+        }
+  
+        .line {
+          margin: 20px 0;
+          border-top: 2px solid #d3d3d3;
+        }
+  
+        .buttons {
+          display: flex;
+          flex-direction: column;  // Asegura que los botones estén uno debajo del otro
+          gap: 10px;
+  
+          .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+  
+          .btn-primary {
+            background-color: #f27021;
+            color: #fff;
+            border: none;
+  
+            &:hover {
+              background-color: #d8601b;
+            }
+          }
+  
+          .btn-secondary {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+  
+            &:hover {
+              background-color: #0056b3;
+            }
+          }
+        }
+      }
+    }
+  
+    .book-review {
+      margin-top: 40px;
+      padding: 20px;
+      border-top: 2px solid #d3d3d3;
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      
+      h3 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 15px;
+      }
+  
+      p {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  .confirmation-message {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Usar Link para la navegación
 import "./BookList.scss";
 
 const BookList = ({ books }) => {
@@ -8,16 +9,13 @@ const BookList = ({ books }) => {
         books.map((book) => (
           <div className="book-card" key={book.isbn}>
             <div className="book-image">
-              <a href={book.url} target="_blank" rel="noopener noreferrer">
+              {/* Usar Link para cambiar la URL sin recargar la página */}
+              <Link to={`/books/${book.isbn}`}>
                 <img src={book.image} alt={book.title} />
-              </a>
+              </Link>
             </div>
             <div className="book-details">
-              <h5>
-                <a href={book.url} target="_blank" rel="noopener noreferrer">
-                  {book.title}
-                </a>
-              </h5>
+              <h5>{book.title}</h5>
               <p className="author">{book.author}</p>
               <p>
                 <b>Idioma:</b> {book.language}

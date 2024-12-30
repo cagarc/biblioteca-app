@@ -1,19 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./BookCard.module.scss";
 
 const BookCard = ({ book }) => {
   return (
     <div className="book-card">
       <div className="book-image">
-        <a href={book.url} target="_blank" rel="noopener noreferrer">
+        <Link to={`/books/${book.isbn}`}>
           <img src={book.image} alt={book.title} />
-        </a>
+        </Link>
       </div>
       <div className="book-details">
         <h5>
-          <a href={book.url} target="_blank" rel="noopener noreferrer">
-            {book.title}
-          </a>
+          <Link to={`/books/${book.isbn}`}>{book.title}</Link>
         </h5>
         <p className="author">{book.author}</p>
         <p>

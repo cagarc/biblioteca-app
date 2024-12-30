@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import "./Header.scss";
+import { useCart } from "../../context/CartContext"; 
 
 const Header = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState("");
+
+  const { cart } = useCart(); 
 
   const handleSearchChange = (event) => {
     const value = event.target.value;
@@ -76,7 +79,7 @@ const Header = ({ onSearch }) => {
             </a>
             <a href="https://www.mrbooks.com/mi_carrito.html" className="btn btn-light">
               <i className="fa fa-shopping-cart"></i>
-              <span>0</span>
+              <span>{cart.length}</span>
             </a>
           </div>
         </div>
